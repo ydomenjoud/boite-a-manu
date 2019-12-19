@@ -456,7 +456,8 @@ body {
         font-size: 40px;
         color: #FFF;
         line-height: 45px;
-        margin-bottom: 100px; }
+        margin-bottom: 100px;
+        font-family: Arial; }
     body main .col2 {
       flex: 1 1 auto;
       max-width: 750px; }
@@ -469,6 +470,7 @@ h1 {
   margin-bottom: 38px; }
 
 input, textarea {
+  font-family: Arial;
   box-sizing: border-box;
   display: block;
   width: calc(100% - 36px);
@@ -488,3 +490,26 @@ button {
   font-weight: bold;
   float: right;
   margin-right: 36px; }
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 20px; }
+    body main {
+      flex-direction: column; }
+      body main div.col1 {
+        max-width: none;
+        width: 100%;
+        text-align: center; }
+        body main div.col1 figure, body main div.col1 p {
+          margin-bottom: 20px; }
+      body main div.col2 {
+        max-width: none;
+        width: 100%; }
+        body main div.col2 h1 {
+          display: none; }
+        body main div.col2 form input, body main div.col2 form textarea {
+          width: 100%; }
+        body main div.col2 form button {
+          margin-right: 0;
+          width: 100%;
+          float: none; } }

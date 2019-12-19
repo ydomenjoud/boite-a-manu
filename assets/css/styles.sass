@@ -27,6 +27,7 @@ body
         color: #FFF
         line-height: 45px
         margin-bottom: 100px
+        font-family: Arial
     .col2
       flex: 1 1 auto
       max-width: 750px
@@ -39,6 +40,7 @@ h1
   margin-bottom: 38px
 
 input, textarea
+  font-family: Arial
   box-sizing: border-box
   display: block
   width: calc(100% - 36px)
@@ -58,3 +60,28 @@ button
   font-weight: bold
   float: right
   margin-right: 36px
+
+
+@media screen and (max-width: 1000px)
+  body
+    padding: 20px
+    main
+      flex-direction: column
+      div.col1
+        max-width: none
+        width: 100%
+        text-align: center
+        figure, p
+          margin-bottom: 20px
+      div.col2
+        max-width: none
+        width: 100%
+        h1
+          display: none
+        form
+          input, textarea
+            width: 100%
+          button
+            margin-right: 0
+            width: 100%
+            float: none
