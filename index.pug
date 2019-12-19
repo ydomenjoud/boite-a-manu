@@ -12,11 +12,11 @@ html(lang="fr")
             .col2
                 h1 Un petit souvenir ?
                 form(netlify, name="contact")
-                    input(name='lastname', placeholder='Nom')
-                    input(name='firstname', placeholder='Prénom')
-                    input(name='phone', placeholder='Téléphone')
-                    input(name='email', placeholder='Email')
-                    textarea(name='message', placeholder='A quel endroit ? A quelle date ? ')
+                    input(name='lastname', placeholder='Nom', required)
+                    input(name='firstname', placeholder='Prénom', required)
+                    input(name='phone', placeholder='Téléphone', required)
+                    input(name='email', placeholder='Email', required)
+                    textarea(name='message', placeholder='A quel endroit ? A quelle date ? ', required)
                     button(type='submit') RÉSERVER
 
 
