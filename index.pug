@@ -1,0 +1,23 @@
+doctype html
+html(lang="fr")
+    head
+        link(rel='stylesheet', href='./assets/css/styles.css')
+        title La boite à manu
+    body
+        main
+            .col1
+                figure
+                    img(src='./assets/img/logo.svg', width=382, height=370)
+                p Réservez la Boîte à Manu, pour une journée, un soir ou un weekend !
+            .col2
+                h1 Un petit souvenir ?
+                form(netlify, name="contact")
+                    input(name='lastname', placeholder='Nom')
+                    input(name='firstname', placeholder='Prénom')
+                    input(name='phone', placeholder='Téléphone')
+                    input(name='email', placeholder='Email')
+                    textarea(name='message', placeholder='A quel endroit ? A quelle date ? ')
+                    button(type='submit') RÉSERVER
+
+
+
